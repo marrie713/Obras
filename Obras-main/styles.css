@@ -1,0 +1,260 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  list-style: none;
+  background: #f5f3e5;
+}
+
+header {
+  height: 50px;
+  background: #bc8f8f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin-right: 50px;
+  gap: 16px
+}
+
+.menu li {
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 25px;
+}
+
+.menu li a {
+  padding: 10px;
+}
+
+.video {
+  height: 500px;
+  overflow: hidden;
+  position: absolute;
+  top: 25%;
+  left: 55%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.projeto {
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 25px;
+  gap: 16px;
+  display: block;
+  position: relative;
+  margin-left: 70px;
+  
+}
+
+
+.galeria {
+  border: none;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 48px;
+  gap: 16px;
+  display: block;
+  position: relative;
+  text-align: center;
+  list-style-type: none;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  height: 25px;
+  position: relative;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
+h3 {
+  text-align: left;
+  font-size: 33px;
+  margin-left: 13%;
+  margin-top: 29rem;
+  margin-bottom: 20px;
+}
+
+#fonte {
+  font-family: "Playfair Display", serif;
+  margin-top: 28rem;
+}
+
+.poema {
+  text-align: left;
+  font-size: 22px;
+  margin-left: 12%;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  margin-top: 5rem;
+
+}
+
+.poema span {
+  display: block;
+  margin-bottom: 12px;
+  margin-top: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  align-items: center;
+}
+
+h5 {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 20rem;
+  margin-left: 9%;
+  margin-right: 9%;
+}
+
+h6 {
+  text-align: right;
+  margin-right: 20px;
+  color: #3366ff;
+  font-size: 20px;
+  margin-bottom: 200px;
+  margin-left: 46%;
+  margin-right: 2%;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  margin-top: 31rem;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#sessao{
+  gap: 15rem;
+  display: flex;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.5rem;
+}
+
+.cards{
+  height: 22rem;
+  width: 16rem;
+  border-radius: 10%;
+  box-shadow: 2px 2px 2px 2px #00000054;
+  margin-bottom: 8rem;
+  justify-content: space-around;
+  
+}
+
+.title{
+  background-color: #3366ff;
+  border-top-left-radius: 12%;
+  border-top-right-radius: 12%;
+  height: 4rem;
+}
+
+/* CARROSSEL  */
+
+/* TAMANHO DA TELA DO CARROSSEL */
+.container{
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  
+}
+
+/* POSICIONAMENTO DAS LABELS EM RELAÇÃO AO QUADRO CONTENT */
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
+  display: flex;
+}
+
+/* TAMANHO E ESTILIZAÇÃO DAS LABELS */
+.bar{
+  width: 50px;
+  height: 1px;
+  border: 2px solid white;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.bar:hover{
+  background-color: white;
+}
+
+/* ESCONDER AS BOLINHAS DO INPUT:RADIO */
+input{
+  display: none;
+}
+
+/* TODAS IMAGES ESTÃO NA TELA, PORÉM N VISIVEIS */
+.slides{
+  display: flex;
+  width: 500%;
+  height: 100%;
+}
+
+/* tamanho de cada slide */
+.slide{
+  width: 20%;
+  transition: .6s;
+}
+
+/* tamanho de cada slide em relação ao pai(slide) */
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+MOVER AS IMAGENS NO CARROSSEL 
+QUANDO O SLIDE1 ESTIVER CHECADO A MARGEM DEVE SER ZERO, PARA PODER EXIBIR A IMAGEM 1 E ASSIM POR DIANTE
+*/
+#slides1:checked ~ .s1 {
+  margin-left: 0;
+}
+#slides2:checked ~ .s1 {
+  margin-left: -20%;
+}
+
+#slides3:checked ~ .s1 {
+  margin-left: -40%;
+}
+#slides4:checked ~ .s1 {
+  margin-left: -60%;
+}
+#slides5:checked ~ .s1 {
+  margin-left: -80%;
+}
